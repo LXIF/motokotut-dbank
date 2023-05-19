@@ -1,12 +1,12 @@
 {
   "canisters": {
-    "dbank_backend": {
-      "main": "src/dbank_backend/main.mo",
+    "dbank": {
+      "main": "src/dbank/main.mo",
       "type": "motoko"
     },
     "dbank_frontend": {
       "dependencies": [
-        "dbank_backend"
+        "dbank"
       ],
       "frontend": {
         "entrypoint": "src/dbank_frontend/src/index.html"
